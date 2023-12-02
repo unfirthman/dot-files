@@ -15,10 +15,7 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 
 -- empty setup using defaults
- require("nvim-tree").setup()
-
--- attempt to solve issues with nvim-treesitter recognizing an internet connection
-require("nvim-treesitter.install").prefer_git = true
+require("nvim-tree").setup()
 
 --vim.cmd("source ~/.config/nvim/init.vim")
 

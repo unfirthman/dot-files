@@ -36,12 +36,15 @@ exec --no-startup-id nm-applet
 
 # will this set up different workspaces?
 
-exec --no-startup-id i3-msg 'workspace 1:Terminal; exec i3-sensible-terminal'
+exec --no-startup-id i3-msg 'workspace 1:Web; exec firefox'
 
-exec --no-startup-id i3-msg 'workspace 2:Web; exec google-chrome'
+exec --no-startup-id i3-msg 'workspace 2:Terminal; exec i3-sensible-terminal'
 
+exec --no-startup-id i3-msg 'workspace 3:Terminal; exec i3-sensible-terminal'
 
+exec --no-startup-id i3-msg 'workspace 4:Pomodoro; exec gnome-pomodoro'
 
+exec --no-startup-id i3-msg 'workspace 5:Web; exec firefox'
 
 # exec --no-startup-id i3-msg 'workspace 6:Terminal; exec i3-sensible-terminal'
 
@@ -66,7 +69,7 @@ floating_modifier $mod
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
-#tiling_drag modifier titlebar
+tiling_drag modifier titlebar
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal

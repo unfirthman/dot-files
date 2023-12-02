@@ -40,16 +40,13 @@ return require('packer').startup(function(use)
   use('theprimeagen/harpoon')
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
-  use('nvim-tree/nvim-web-devicons')
 
   use {
   'nvim-tree/nvim-tree.lua',
   requires = {
-    'nvim-tree/nvim-web-devicons', -- optional
+    'nvim-tree/nvim-web-devicons', -- optional, for file icons
   },
-  config = function()
-    require("nvim-tree").setup {}
-  end
+  tag = 'nightly' -- optional, updated every week. (see issue #1193)
 }
 
   use {
@@ -171,13 +168,8 @@ use({
 -- MarkDown preview
 use('iamcco/markdown-preview.nvim')
 
--- git diff
--- Packer
-use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
 
-use {'akinsho/git-conflict.nvim', tag = "*", config = function()
-  require('git-conflict').setup()
-end}
+
 
 end)
 
