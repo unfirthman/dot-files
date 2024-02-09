@@ -18,7 +18,7 @@ vim.opt.termguicolors = true
 -- require("nvim-tree").setup()
 
 -- attempt to solve issues with nvim-treesitter recognizing an internet connection
-require("nvim-treesitter.install").prefer_git = true
+-- require("nvim-treesitter.install").prefer_git = true
 
 --vim.cmd("source ~/.config/nvim/init.vim")
 
